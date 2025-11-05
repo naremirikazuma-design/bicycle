@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/* common */
+html {
+  font-size: 100%;
+}
+
+body {
+  /* background-color: aquamarine; */
+  font-size: 0.9rem;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+h1 {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+}
+
+h2 {
+  /* background: lightgray; */
+  /* margin: 0; */
+  display: inline-block;
+  font-size: 32px;
+  margin-bottom: 60px;
+  border-bottom: solid 1px black;
+}
+
+li {
+  list-style: none;
+  width: 32%;
+}
+
+h3 {
+  /* background: red; */
+  margin: 0;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* header特有 */
+header {
+  display: flex;
+  /* background: pink; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 0;
+}
+
+nav a {
+  background: white;
+  color: black;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+/* mainvisual特有 */
+.main {
+  margin-bottom: 80px;
+}
+
+.main img {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* 可変部分 about と bicycle */
+
+.container {
+  /* background: lightcyan; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.text {
+  /* display: inline-block; */
+  text-align: left;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  width: 32%;
+}
+
+.man,
+.bike {
+  /* background: pink; */
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+footer {
+  font-size: 8px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+/*スマホ対応*/
+
+@media screen and (max-width: 600px) {
+
+  /* Aboutセクション */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container img {
+    margin-right: 0;
+  }
+
+  /* Bicycleセクション */
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+  }
